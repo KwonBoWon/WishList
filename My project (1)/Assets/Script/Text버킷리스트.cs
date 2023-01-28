@@ -47,7 +47,7 @@ public class Text버킷리스트 : MonoBehaviour
         textSound.Play();
         for (a = 0; a < narration.Length; a++)
         {   
-
+            isTextEnd = false;
             writerText += narration[a];
             ChatText.text = writerText;
             yield return new WaitForSeconds(0.1f);

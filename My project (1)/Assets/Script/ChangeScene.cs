@@ -14,6 +14,7 @@ public class ChangeScene : MonoBehaviour
     public string choice2Scene;
     float fadeCount = 0;
     public GameObject[] check = new GameObject[5];
+    public Data data;
     
 
     public void FadeOut(){
@@ -44,6 +45,9 @@ public class ChangeScene : MonoBehaviour
 
         FadeOut();  
     }
+    void Start(){
+
+    }
     void Update()
     {
         if(fadeCount>=1.5f){
@@ -67,6 +71,10 @@ public class ChangeScene : MonoBehaviour
     public void SceneChange4(){
         check[4].SetActive(true);
         FadeOut();  
+    }
+    public void BackPackChange(){
+        data.trip = 3;
+       SceneChange();
     }
 
 }
