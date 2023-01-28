@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextController : MonoBehaviour
+public class Text카운터 : MonoBehaviour
 {
     public Text ChatText; // 실제 채팅이 나오는 텍스트
     public Text CharacterName; // 캐릭터 이름이 나오는 텍스트
@@ -12,25 +12,37 @@ public class TextController : MonoBehaviour
     public List<KeyCode> skipButton; // 대화를 빠르게 넘길 수 있는 키
     public GameObject sceneButton; //씬이동버튼
 
+    public bool isChoice = true;
+    public GameObject choice1;
+    public GameObject choice2;
+
     public string writerText = "";
 
     bool isButtonClicked = false;
     bool isTextEnd = false;
-
+    bool isTextDone = false;
     public AudioSource textSound;
     void Start()
     {
         StartCoroutine(TextPractice());
+        //textSound = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
     {   
         if(isTextEnd){
-            foreach (var element in skipButton) // 버튼 검사
-            {
-                if (Input.GetKeyDown(element))
+            if(isChoice && isTextDone){
+                choice1.SetActive(true);
+                choice2.SetActive(true);
+
+            }
+            else{
+                foreach (var element in skipButton) // 버튼 검사
                 {
-                    isButtonClicked = true;
+                    if (Input.GetKeyDown(element))
+                    {
+                        isButtonClicked = true;
+                    }
                 }
             }
         }
@@ -46,7 +58,8 @@ public class TextController : MonoBehaviour
         //텍스트 타이핑 효과
         textSound.Play();
         for (a = 0; a < narration.Length; a++)
-        {
+        {   
+
             writerText += narration[a];
             ChatText.text = writerText;
             yield return new WaitForSeconds(0.1f);
@@ -57,6 +70,7 @@ public class TextController : MonoBehaviour
                 if(isLastChat){
                     textSound.Stop();
                     sceneButton.SetActive(true);
+                    isTextDone = true;
                 }
             }
         }
@@ -76,13 +90,11 @@ public class TextController : MonoBehaviour
 
     IEnumerator TextPractice()
     {
-        yield return StartCoroutine(NormalChat("의사", "곽두팔씨, 안타깝지만 현재 희귀병이 온몸에 전이된 상태입니다...", false));
-        yield return StartCoroutine(NormalChat("의사", "곽두팔씨에게 남은시간은... 24", false));
-        yield return StartCoroutine(NormalChat("곽두팔", "24일이요?", false));
-        yield return StartCoroutine(NormalChat("의사", "23:59분 55초...", false));
-        yield return StartCoroutine(NormalChat("의사", "23:59분 50초...", false));
-        yield return StartCoroutine(NormalChat("곽두팔", "24시간 이라는겁니까?", false));
-        yield return StartCoroutine(NormalChat("의사", "네... 안타깝게 되었습니다.", false));
-        yield return StartCoroutine(NormalChat("의사", "남은시간을 소중히 사용하시길 바랍니다...", true));
+        yield return StartCoroutine(NormalChat("간호사", "총 24,052,000원입니다~", false));
+        yield return StartCoroutine(NormalChat("곽두팔", "네? 얼마라고요?", false));
+        yield return StartCoroutine(NormalChat("간호사", "24,052,000원이라구요 할부로 해드릴까요?", false));
+        yield return StartCoroutine(NormalChat("곽두팔", "할부? 내일죽을건데 할부를 해야하나?", true));
     }
+
+    
 }

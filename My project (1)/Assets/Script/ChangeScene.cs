@@ -10,6 +10,8 @@ public class ChangeScene : MonoBehaviour
     public Image image;
 
     public string sceneName;
+    public string choice1Scene;
+    public string choice2Scene;
     float fadeCount = 0;
     public GameObject[] check = new GameObject[5];
     
@@ -28,6 +30,16 @@ public class ChangeScene : MonoBehaviour
            
         }
     }
+
+    public void ButtonChoice1(){
+        sceneName = choice1Scene;
+        SceneChange();
+    }
+    public void ButtonChoice2(){
+        sceneName = choice2Scene;
+        SceneChange();
+    }
+
     public void SceneChange(){
 
         FadeOut();  

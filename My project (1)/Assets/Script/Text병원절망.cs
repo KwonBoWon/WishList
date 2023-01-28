@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextController : MonoBehaviour
+public class Text병원절망 : MonoBehaviour
 {
     public Text ChatText; // 실제 채팅이 나오는 텍스트
     public Text CharacterName; // 캐릭터 이름이 나오는 텍스트
@@ -16,11 +16,11 @@ public class TextController : MonoBehaviour
 
     bool isButtonClicked = false;
     bool isTextEnd = false;
-
     public AudioSource textSound;
     void Start()
     {
         StartCoroutine(TextPractice());
+        //textSound = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
@@ -46,7 +46,8 @@ public class TextController : MonoBehaviour
         //텍스트 타이핑 효과
         textSound.Play();
         for (a = 0; a < narration.Length; a++)
-        {
+        {   
+
             writerText += narration[a];
             ChatText.text = writerText;
             yield return new WaitForSeconds(0.1f);
@@ -76,13 +77,11 @@ public class TextController : MonoBehaviour
 
     IEnumerator TextPractice()
     {
-        yield return StartCoroutine(NormalChat("의사", "곽두팔씨, 안타깝지만 현재 희귀병이 온몸에 전이된 상태입니다...", false));
-        yield return StartCoroutine(NormalChat("의사", "곽두팔씨에게 남은시간은... 24", false));
-        yield return StartCoroutine(NormalChat("곽두팔", "24일이요?", false));
-        yield return StartCoroutine(NormalChat("의사", "23:59분 55초...", false));
-        yield return StartCoroutine(NormalChat("의사", "23:59분 50초...", false));
-        yield return StartCoroutine(NormalChat("곽두팔", "24시간 이라는겁니까?", false));
-        yield return StartCoroutine(NormalChat("의사", "네... 안타깝게 되었습니다.", false));
-        yield return StartCoroutine(NormalChat("의사", "남은시간을 소중히 사용하시길 바랍니다...", true));
+        yield return StartCoroutine(NormalChat("곽두팔", "내가 24시간뒤에 죽는다니... 믿을수 없어", false));
+        yield return StartCoroutine(NormalChat("곽두팔", "나 사나이 곽두팔 이대로 죽을 순 없어", false));
+        yield return StartCoroutine(NormalChat("곽두팔", "이대로 죽기엔 못해본 것들이 너무 많아...", false));
+        yield return StartCoroutine(NormalChat("곽두팔", "24시간을 어떻게 써야하지...", false));
+        yield return StartCoroutine(NormalChat("곽두팔", "내가 해보고 싶었던게 뭐였지?", false));
+        yield return StartCoroutine(NormalChat("곽두팔", "맞아 버킷리스트를 적어 놨었어", true));
     }
 }
