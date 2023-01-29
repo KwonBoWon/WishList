@@ -105,11 +105,11 @@ EditorBuildSettings:
     path: "Assets/Scenes/3\uBD80/\uC2A4\uD0A4\uBCF4\uB4DC.unity"
     guid: f95883ce12f0e8b4bbac9ade6b6c0748
   - enabled: 1
-    path: "Assets/Scenes/3\uBD80/\uCEA0\uD504\uD30C\uC774\uC5B4.unity"
-    guid: a9e97ecb05524cb4db4ffbd29aabab70
-  - enabled: 1
     path: "Assets/Scenes/3\uBD80/\uB208\uC0AC\uB78C.unity"
     guid: 4a8e91e8b5473864a82970fb216fe16f
+  - enabled: 1
+    path: "Assets/Scenes/3\uBD80/\uCEA0\uD504\uD30C\uC774\uC5B4.unity"
+    guid: a9e97ecb05524cb4db4ffbd29aabab70
   - enabled: 1
     path: "Assets/Scenes/3\uBD80/\uBCC4\uB625\uBCC4.unity"
     guid: 29f4df2594fe4e543a78e175d14b12fc

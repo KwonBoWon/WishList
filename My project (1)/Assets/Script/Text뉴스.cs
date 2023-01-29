@@ -36,6 +36,9 @@ public class Text뉴스 : MonoBehaviour
         //if(data.trip == 2){
         //    change.GetComponent<ChangeScene>().sceneName ="가방";
         //}
+        if(data.cross ==1){
+            change.GetComponent<ChangeScene>().sceneName ="사망";
+        }
     }
 
     void Update()
