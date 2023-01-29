@@ -40,7 +40,22 @@ public class ChangeScene : MonoBehaviour
         sceneName = choice2Scene;
         SceneChange();
     }
-
+    public void Cross(){
+        data.cross = 2;
+        sceneName = choice1Scene;
+        SceneChange();
+    }
+    public void Cross2(){
+        data.cross = 1;
+        sceneName = choice2Scene;
+        SceneChange();
+    }
+    public void Honey(){
+        data.elephant = 2;
+        sceneName = choice2Scene;
+        SceneChange();
+    }
+    
     public void SceneChange(){
 
         FadeOut();  
@@ -74,7 +89,8 @@ public class ChangeScene : MonoBehaviour
     }
     public void BackPackChange(){
         data.trip = 3;
-       SceneChange();
+        sceneName = "비행기스카이다이빙";
+        SceneChange();
     }
 
 }

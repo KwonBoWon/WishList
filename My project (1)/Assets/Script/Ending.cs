@@ -19,4 +19,7 @@ public class Ending : MonoBehaviour
     public void SadEnding(){
         Application.Quit();
     }
+    public void HappyEnding(){
+        Application.Quit();
+    }
 }

@@ -1081,6 +1081,7 @@ MonoBehaviour:
   writerText: 
   textSound: {fileID: 1535798331}
   data: {fileID: 11400000, guid: 4f594f83050ae634584010f21f84c9b8, type: 2}
+  change: {fileID: 1541469469}
 --- !u!1 &1541469469
 GameObject:
   m_ObjectHideFlags: 0

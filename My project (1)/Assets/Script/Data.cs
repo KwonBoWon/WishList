@@ -16,6 +16,7 @@ public class Data : ScriptableObject
     public int ski = 0;
     public int camp = 0;
     public int tv = 0;
+    public int cross = 0;
     public string hour ="00";
     public string min ="00";
     /*

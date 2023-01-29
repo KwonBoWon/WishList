@@ -26,11 +26,16 @@ public class Text공항 : MonoBehaviour
 
     public Data data;
 
+    public GameObject change;
 
     void Start()
-    {
+    {   
+        
         StartCoroutine(TextPractice());
         //textSound = gameObject.AddComponent<AudioSource>();
+        if(data.trip == 2){
+            change.GetComponent<ChangeScene>().sceneName ="가방";
+        }
     }
 
     void Update()
