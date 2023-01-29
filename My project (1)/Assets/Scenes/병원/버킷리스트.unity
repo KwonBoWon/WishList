@@ -461,7 +461,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214791859}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -895,12 +895,15 @@ MonoBehaviour:
   panel: {fileID: 1392758942}
   image: {fileID: 1392758944}
   sceneName: "\uBCD1\uC6D0\uCE74\uC6B4\uD130"
+  choice1Scene: 
+  choice2Scene: 
   check:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  data: {fileID: 0}
 --- !u!4 &1541469471
 Transform:
   m_ObjectHideFlags: 0

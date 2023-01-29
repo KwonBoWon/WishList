@@ -675,7 +675,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214791859}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -1111,15 +1111,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 1392758942}
   image: {fileID: 1392758944}
-  sceneName: 
-  choice1Scene: "\uB3C4\uB9DD\uAC04\uB2E4"
-  choice2Scene: "60\uAC1C\uC6D4\uD560\uBD80\uC694"
+  sceneName: "\uBB50\uD558\uC9C0"
+  choice1Scene: 
+  choice2Scene: 
   check:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  data: {fileID: 0}
 --- !u!4 &1541469471
 Transform:
   m_ObjectHideFlags: 0

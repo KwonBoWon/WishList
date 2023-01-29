@@ -1113,7 +1113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 1392758942}
   image: {fileID: 1392758944}
-  sceneName: "\uC2DC\uB0B4\uAC00\uB294\uAE38"
+  sceneName: "\uC2DC\uB0B4"
   choice1Scene: 
   choice2Scene: 
   check:

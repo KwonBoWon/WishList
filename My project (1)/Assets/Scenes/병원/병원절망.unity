@@ -693,13 +693,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 1392758942}
   image: {fileID: 1392758944}
-  sceneName: "\uBCD1\uC6D0\uC808\uB9DD"
+  sceneName: "\uBC84\uD0B7\uB9AC\uC2A4\uD2B8"
+  choice1Scene: 
+  choice2Scene: 
   check:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  data: {fileID: 0}
 --- !u!4 &1541469471
 Transform:
   m_ObjectHideFlags: 0

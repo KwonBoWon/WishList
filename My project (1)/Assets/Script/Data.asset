@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 607eb69457001ea4b9e278739ad989a4, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  trip: 2
+  trip: 0
   diving: 0
   star: 0
   sky: 0
   elephant: 0
   profile: 0
   snowman: 0
-  tree: 2
+  tree: 0
   ski: 0
   camp: 0
   tv: 0
+  cross: 0
   hour: 00
   min: 00
