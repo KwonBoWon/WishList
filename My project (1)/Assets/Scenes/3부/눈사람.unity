@@ -1074,7 +1074,7 @@ MonoBehaviour:
   CharacterName: {fileID: 513899760}
   chatbutton: {fileID: 1694551198}
   skipButton: 43010000
-  sceneButton: {fileID: 0}
+  sceneButton: {fileID: 1873646686}
   isChoice: 0
   choice1: {fileID: 1873646686}
   choice2: {fileID: 0}
